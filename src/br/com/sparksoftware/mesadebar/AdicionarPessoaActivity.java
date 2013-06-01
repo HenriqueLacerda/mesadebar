@@ -58,9 +58,9 @@ public class AdicionarPessoaActivity extends Activity {
     	
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_adicionar_pessoa, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.activity_adicionar_pessoa, menu);
+//        return true;
+//    }
 }

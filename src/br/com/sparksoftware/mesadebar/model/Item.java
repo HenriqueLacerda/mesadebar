@@ -1,11 +1,15 @@
 package br.com.sparksoftware.mesadebar.model;
 
+import java.util.List;
+
 public class Item {
 	private int id;
 	private String nome;
 	private double quantidade;
 	private double valorUnitario;
 	private double valorTotal;
+	private List<Pessoa> pessoas;
+	
 	public int getId() {
 		return id;
 	}
@@ -36,6 +40,10 @@ public class Item {
 	public void setValorTotal(double valorTotal) {
 		this.valorTotal = valorTotal;
 	}
-	
-	
+	public List<Pessoa> getPessoas() {
+		return pessoas;
+	}
+	public void setPessoas(List<Pessoa> pessoas) {
+		this.pessoas = pessoas;
+	}
 }

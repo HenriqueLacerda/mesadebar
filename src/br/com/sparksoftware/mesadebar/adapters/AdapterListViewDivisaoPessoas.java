@@ -12,20 +12,20 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class AdapterListViewPessoas extends BaseAdapter{
+public class AdapterListViewDivisaoPessoas extends BaseAdapter{
 
 	private LayoutInflater mInflater;
     private ArrayList<Pessoa> itens;
     private ViewHolder holder;
     
-    public AdapterListViewPessoas(Context context) {
+    public AdapterListViewDivisaoPessoas(Context context) {
         // Itens que preencheram o listview
         ArrayList<Pessoa> a = new ArrayList<Pessoa>();
         this.itens = a;
         mInflater = LayoutInflater.from(context);
     }
     
-    public AdapterListViewPessoas(Context context, List<Pessoa> itens) {
+    public AdapterListViewDivisaoPessoas(Context context, List<Pessoa> itens) {
         // Itens que preencheram o listview
         ArrayList<Pessoa> a = new ArrayList<Pessoa>();
         for (Pessoa _pessoa : itens) {

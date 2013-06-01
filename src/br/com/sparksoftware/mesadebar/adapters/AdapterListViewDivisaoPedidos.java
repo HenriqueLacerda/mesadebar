@@ -12,20 +12,20 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-public class AdapterListViewPedidos extends BaseAdapter{
+public class AdapterListViewDivisaoPedidos extends BaseAdapter{
 
 	private LayoutInflater mInflater;
     private ArrayList<Item> itens;
     private ViewHolder holder;
     
-    public AdapterListViewPedidos(Context context) {
+    public AdapterListViewDivisaoPedidos(Context context) {
         // Itens que preencheram o listview
         ArrayList<Item> a = new ArrayList<Item>();
         this.itens = a;
         mInflater = LayoutInflater.from(context);
     }
     
-    public AdapterListViewPedidos(Context context, List<Item> itens) {
+    public AdapterListViewDivisaoPedidos(Context context, List<Item> itens) {
         // Itens que preencheram o listview
         ArrayList<Item> a = new ArrayList<Item>();
         for (Item _item : itens) {

@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 
@@ -19,6 +20,7 @@ public class PrincipalActivity extends Activity {
 	private ImageView imgViewAddPedidos;
 	private ListView listViewPessoas;
 	private ListView listViewPedidos;
+	private Button btnDividirConta;
 	public static AdapterListViewPessoas adapterListViewPessoas;
 	public static AdapterListViewPedidos adapterListViewPedidos;
 	
@@ -38,6 +40,7 @@ public class PrincipalActivity extends Activity {
     	imgViewAddPedidos = (ImageView) findViewById(R.id.ImageViewAddPedidos);
     	listViewPessoas = (ListView) findViewById(R.id.listViewPessoas);
     	listViewPedidos = (ListView) findViewById(R.id.listViewPedidos);
+    	btnDividirConta = (Button) findViewById(R.id.btnDividirConta);
     	
     	adapterListViewPessoas = new AdapterListViewPessoas(getApplicationContext());
     	adapterListViewPedidos = new AdapterListViewPedidos(getApplicationContext());
@@ -64,6 +67,15 @@ public class PrincipalActivity extends Activity {
 				preencheListas();
 			}
 		});
+    	btnDividirConta.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent I = new Intent(PrincipalActivity.this, ResultadoDivisaoActivity.class);
+				startActivity(I);
+			}
+		});
+    	
     }
     
     private void preencheListas()
@@ -73,9 +85,9 @@ public class PrincipalActivity extends Activity {
     }
     
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_principal, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.activity_principal, menu);
+//        return true;
+//    }
 }

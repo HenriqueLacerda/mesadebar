@@ -1,5 +1,6 @@
 package br.com.sparksoftware.mesadebar;
 
+import br.com.sparksoftware.mesadebar.R;
 import br.com.sparksoftware.mesadebar.model.Item;
 import android.os.Bundle;
 import android.app.Activity;
@@ -63,9 +64,9 @@ public class AdicionarPedidoActivity extends Activity {
     	
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_adicionar_pedido, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.activity_adicionar_pedido, menu);
+//        return true;
+//    }
 }
